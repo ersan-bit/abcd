@@ -79,8 +79,8 @@ if uploaded_file is not None:
             "LSTM (Regresyon)"
         ])
 
-        num_rows = df.shape[0]
-        epochs = 50 if num_rows < 1000 else 30 if num_rows < 5000 else 10
+       
+        epochs = 50 
 
         st.subheader("4. Adım: Eğitim Ayarları")
         st.write(f"Veri boyutuna göre önerilen epoch: **{epochs}**")
